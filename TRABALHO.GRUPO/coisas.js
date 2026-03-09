@@ -115,7 +115,7 @@ function salvarFavoritos(lista) {
   localStorage.setItem('favoritos', JSON.stringify(lista));
 } 
 
-// Alterna o estado de favorito do índice ativo e atualiza o botão
+// Adiciona ou remove o índice ativo da lista de favoritos e atualiza o botão
 function alternarFavorito() {
   const lista = lerFavoritos();
   const idx   = lista.indexOf(indiceAtivo);
